@@ -32,13 +32,14 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    openPost() {
-      console.log('Open post')
+  export default {
+    methods: {
+      openPost() {
+        const id = 'test-id'
+        this.$router.push(`/post/${id}`)
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
